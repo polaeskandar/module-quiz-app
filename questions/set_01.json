@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Why do we use the '<br />' element?",
+    "answer_1": "To make text bolder.",
+    "answer_2": "To make text italic.",
+    "answer_3": "To add a breakline.",
+    "answer_4": "To create a horizontal line.",
+    "right_answer": "To add a breakline.",
+    "tags": ["HTML", "CSS", "Front-end"],
+    "render_title_as_html": false
+  },
+  {
+    "title": "does the '<img />' element have the attribute 'href'?",
+    "answer_1": "Yes.",
+    "answer_2": "No, it is only for the anchor tag '<a></a>'.",
+    "answer_3": "All elements has this attribute.",
+    "answer_4": "Answer 1 and 3 is right",
+    "right_answer": "No, it is only for the anchor tag '<a></a>'.",
+    "tags": ["HTML", "CSS", "Front-end"],
+    "render_title_as_html": false
+  },
+  {
+    "title": "How can we make the text of an element bold?",
+    "answer_1": "Wrapping the element with '<b></b>' tag.",
+    "answer_2": "Wrapping the element with '<strong></strong>' tag.",
+    "answer_3": "Using the 'font-weight' property in CSS.",
+    "answer_4": "All of the answers are right.",
+    "right_answer": "All of the answers are right.",
+    "tags": ["HTML", "CSS", "Front-end"],
+    "render_title_as_html": false
+  },
+  {
+    "title": "What is the right hierarchy for creating a part of the webpage?",
+    "answer_1": "Adding a '<h2></h2>' tag, then adding a '<p></p>' tag, then adding a '<h1></h1>' tag, then adding a '<p></p>' tag, then adding a '<h3></h3>' tag, then adding a '<p></p>' tag, then <img>",
+    "answer_2": "Adding a '<h1></h1>' tag, then adding a '<p></p>' tag, then adding a '<h3></h3>' tag, then adding a '<p></p>' tag, then adding a '<h2></h2>' tag, then adding a '<p></p>' tag, then <img>",
+    "answer_3": "Adding a '<h2></h2>' tag, then adding a '<p></p>' tag, then adding a '<h3></h3>' tag, then adding a '<p></p>' tag, then adding a '<h1></h1>' tag, then adding a '<p></p>' tag, then <img>",
+    "answer_4": "All of the answers are wrong.",
+    "right_answer": "All of the answers are wrong.",
+    "tags": ["HTML", "CSS", "Front-end"],
+    "render_title_as_html": false
+  },
+  {
+    "title": "How can we include an external page inside our HTML page?",
+    "answer_1": "By using include in HTML.",
+    "answer_2": "By using load In HTML.",
+    "answer_3": "By using the '<iframe></iframe>' tag.",
+    "answer_4": "All of the answers are wrong.",
+    "right_answer": "By using the '<iframe></iframe>' tag.",
+    "tags": ["HTML", "CSS", "Front-end"],
+    "render_title_as_html": false
+  },
+  {
+    "title": "Select the tag that <b>doesn't</b> exist in HTML.",
+    "answer_1": "<object></object>.",
+    "answer_2": "<basefont></basefont>.",
+    "answer_3": "<abbr></abbr>.",
+    "answer_4": "All of the mentioned tags exist in HTML.",
+    "right_answer": "All of the mentioned tags exist in HTML.",
+    "tags": ["HTML", "CSS", "Front-end"],
+    "render_title_as_html": true
+  },
+  {
+    "title": "How do we specify the type of the HTML document?",
+    "answer_1": "<DOCTYPE html>.",
+    "answer_2": "<DOCTYPE html5>.",
+    "answer_3": "<!DOCTYPE html5>.",
+    "answer_4": "<!DOCTYPE html>.",
+    "right_answer": "<!DOCTYPE html>.",
+    "tags": ["HTML", "CSS", "Front-end"],
+    "render_title_as_html": false
+  },
+  {
+    "title": "What is the element that <b>doesn't</b> exist in HTML5 semantics?",
+    "answer_1": "<article></article>.",
+    "answer_2": "<section></section>.",
+    "answer_3": "<blockquote></blockquote>.",
+    "answer_4": "<aside></aside>.",
+    "right_answer": "<blockquote></blockquote>.",
+    "tags": ["HTML", "CSS", "Front-end"],
+    "render_title_as_html": true
+  },
+  {
+    "title": "Which way do we use in HTML5 to set attributes on elements?",
+    "answer_1": "<div class='class-name'></div>.",
+    "answer_2": "<div class=class-name></div>.",
+    "answer_3": "<div class=\"class-name\"></div>.",
+    "answer_4": "All of the answers are right.",
+    "right_answer": "All of the answers are right.",
+    "tags": ["HTML", "CSS", "Front-end"],
+    "render_title_as_html": false
+  }
+]
