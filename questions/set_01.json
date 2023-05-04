@@ -6,7 +6,7 @@
     "answer_3": "To add a breakline.",
     "answer_4": "To create a horizontal line.",
     "right_answer": "To add a breakline.",
-    "tags": ["HTML", "CSS", "Front-end"],
+    "tags": ["HTML", "Front-end"],
     "render_title_as_html": false
   },
   {
@@ -16,7 +16,7 @@
     "answer_3": "All elements has this attribute.",
     "answer_4": "Answer 1 and 3 is right",
     "right_answer": "No, it is only for the anchor tag '<a></a>'.",
-    "tags": ["HTML", "CSS", "Front-end"],
+    "tags": ["HTML", "Front-end"],
     "render_title_as_html": false
   },
   {
@@ -36,7 +36,7 @@
     "answer_3": "Adding a '<h2></h2>' tag, then adding a '<p></p>' tag, then adding a '<h3></h3>' tag, then adding a '<p></p>' tag, then adding a '<h1></h1>' tag, then adding a '<p></p>' tag, then <img>",
     "answer_4": "All of the answers are wrong.",
     "right_answer": "All of the answers are wrong.",
-    "tags": ["HTML", "CSS", "Front-end"],
+    "tags": ["HTML", "Front-end"],
     "render_title_as_html": false
   },
   {
@@ -46,7 +46,7 @@
     "answer_3": "By using the '<iframe></iframe>' tag.",
     "answer_4": "All of the answers are wrong.",
     "right_answer": "By using the '<iframe></iframe>' tag.",
-    "tags": ["HTML", "CSS", "Front-end"],
+    "tags": ["HTML", "Front-end"],
     "render_title_as_html": false
   },
   {
@@ -56,7 +56,7 @@
     "answer_3": "<abbr></abbr>.",
     "answer_4": "All of the mentioned tags exist in HTML.",
     "right_answer": "All of the mentioned tags exist in HTML.",
-    "tags": ["HTML", "CSS", "Front-end"],
+    "tags": ["HTML", "Front-end"],
     "render_title_as_html": true
   },
   {
@@ -66,7 +66,7 @@
     "answer_3": "<!DOCTYPE html5>.",
     "answer_4": "<!DOCTYPE html>.",
     "right_answer": "<!DOCTYPE html>.",
-    "tags": ["HTML", "CSS", "Front-end"],
+    "tags": ["HTML", "Front-end"],
     "render_title_as_html": false
   },
   {
@@ -76,7 +76,7 @@
     "answer_3": "<blockquote></blockquote>.",
     "answer_4": "<aside></aside>.",
     "right_answer": "<blockquote></blockquote>.",
-    "tags": ["HTML", "CSS", "Front-end"],
+    "tags": ["HTML", "Front-end"],
     "render_title_as_html": true
   },
   {
@@ -86,7 +86,7 @@
     "answer_3": "<div class=\"class-name\"></div>.",
     "answer_4": "All of the answers are right.",
     "right_answer": "All of the answers are right.",
-    "tags": ["HTML", "CSS", "Front-end"],
+    "tags": ["HTML", "Front-end"],
     "render_title_as_html": false
   }
 ]

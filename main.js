@@ -1,35 +1,35 @@
-const quizAppContainer = document.querySelector(".quiz-app");
-const questionsCountDiv = document.querySelector(".quiz-counters .count");
-const bulletsContainer = document.querySelector(".bullets");
-const quizInfoContainer = document.querySelector(".quiz-info");
-const tagsContainer = document.querySelector(".tags");
-const questionContainer = document.querySelector(".question");
-const answersContainer = document.querySelector(".answers-area");
-const submitBtn = document.querySelector(".submit-button");
-const countDownContainer = document.querySelector(".countdown");
+const quizAppContainer = document.querySelector('.quiz-app');
+const questionsCountDiv = document.querySelector('.quiz-counters .count');
+const bulletsContainer = document.querySelector('.bullets');
+const quizInfoContainer = document.querySelector('.quiz-info');
+const tagsContainer = document.querySelector('.tags');
+const questionContainer = document.querySelector('.question');
+const answersContainer = document.querySelector('.answers-area');
+const submitBtn = document.querySelector('.submit-button');
+const countDownContainer = document.querySelector('.countdown');
 
 let currentQuestionIndex = 0;
 let questionsGotRightCount = 0;
 let countDownInterval;
 
-const removeLoadingState = () => document.querySelector(".overlay").remove();
+const removeLoadingState = () => document.querySelector('.overlay').remove();
 
 const changeQuestionsCount = (questionsCount) =>
   (questionsCountDiv.innerHTML = `${questionsCount} Questions`);
 
 const createBullets = (questionsCount) => {
   for (let i = 0; i < questionsCount; i++) {
-    let bulletElement = document.createElement("span");
+    let bulletElement = document.createElement('span');
     bulletsContainer.appendChild(bulletElement);
   }
   bulletsContainer
-    .querySelectorAll("span")
-    [currentQuestionIndex].classList.add("active");
+    .querySelectorAll('span')
+    [currentQuestionIndex].classList.add('active');
 };
 
 const createTags = (questionObject) => {
   for (const tag of questionObject.tags) {
-    let tagSpan = document.createElement("span");
+    let tagSpan = document.createElement('span');
     let tagText = document.createTextNode(tag);
     tagSpan.appendChild(tagText);
     tagsContainer.appendChild(tagSpan);
@@ -37,7 +37,7 @@ const createTags = (questionObject) => {
 };
 
 const createQuestion = (questionObject) => {
-  const questionHeading = document.createElement("h2");
+  const questionHeading = document.createElement('h2');
   if (questionObject.render_title_as_html) {
     questionHeading.innerHTML = questionObject.title;
   } else {
@@ -49,15 +49,15 @@ const createQuestion = (questionObject) => {
 
 const createAnswers = (questionObject) => {
   for (let i = 1; i <= 4; i++) {
-    let answerContainer = document.createElement("div");
-    answerContainer.classList.add("answer");
-    let answerInput = document.createElement("input");
+    let answerContainer = document.createElement('div');
+    answerContainer.classList.add('answer');
+    let answerInput = document.createElement('input');
     answerInput.id = `answer_${i}`;
-    answerInput.type = "radio";
-    answerInput.name = "answers";
+    answerInput.type = 'radio';
+    answerInput.name = 'answers';
     answerInput.dataset.answer = questionObject[`answer_${i}`];
     answerContainer.appendChild(answerInput);
-    let answerLabel = document.createElement("label");
+    let answerLabel = document.createElement('label');
     answerLabel.htmlFor = `answer_${i}`;
     let answerLabelText = document.createTextNode(
       questionObject[`answer_${i}`]
@@ -70,7 +70,7 @@ const createAnswers = (questionObject) => {
 
 const checkAnswer = (questionObject) => {
   const rightAnswer = questionObject.right_answer;
-  const answers = document.getElementsByName("answers");
+  const answers = document.getElementsByName('answers');
   let chosenAnswer = null;
 
   answers.forEach((answer) => {
@@ -85,10 +85,10 @@ const checkAnswer = (questionObject) => {
 };
 
 const removeQuestion = () => {
-  bulletsContainer.innerHTML = "";
-  tagsContainer.innerHTML = "";
-  questionContainer.innerHTML = "";
-  answersContainer.innerHTML = "";
+  bulletsContainer.innerHTML = '';
+  tagsContainer.innerHTML = '';
+  questionContainer.innerHTML = '';
+  answersContainer.innerHTML = '';
 };
 
 const moreQuestions = (questionsCount) =>
@@ -136,8 +136,8 @@ const startCountDown = (duration) => {
     let minutes, seconds;
     countDownInterval = setInterval(() => {
       (minutes = parseInt(duration / 60)), (seconds = parseInt(duration % 60));
-      countDownContainer.innerHTML = `${minutes < 10 ? "0" : ""}${minutes}:${
-        seconds < 10 ? "0" : ""
+      countDownContainer.innerHTML = `${minutes < 10 ? '0' : ''}${minutes}:${
+        seconds < 10 ? '0' : ''
       }${seconds}`;
       if (--duration < 0) {
         clearInterval(countDownInterval);
@@ -154,7 +154,7 @@ const getQuestions = () => {
       let questionsObject = JSON.parse(this.responseText);
       let questionsCount = questionsObject.length;
 
-      startCountDown(5);
+      startCountDown(60);
       changeQuestionsCount(questionsCount);
       createBullets(questionsCount);
       createTags(questionsObject[currentQuestionIndex]);
@@ -171,7 +171,7 @@ const getQuestions = () => {
           createQuestion(questionsObject[currentQuestionIndex]);
           createAnswers(questionsObject[currentQuestionIndex]);
           clearInterval(countDownInterval);
-          startCountDown(5);
+          startCountDown(60);
         } else {
           checkAnswer(questionsObject[currentQuestionIndex]);
           removeQuestion();
@@ -180,7 +180,7 @@ const getQuestions = () => {
       };
     }
   };
-  request.open("GET", "questions/set_01.json", true);
+  request.open('GET', './questions/set_01.json', true);
   request.send();
 };
 
